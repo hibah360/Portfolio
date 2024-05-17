@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: black;
+    color: whitesmoke;
+} */
+
+html{
+    scroll-behavior: smooth;
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+#header nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+
+}
+
+#header nav .firstname{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20%;
+    
+}
+
+#header nav .firstname span{
+    color: rgb(202, 103, 143);
+}
+
+#header nav ul{
+    padding-top: 20px;
+}
+
+#header nav ul li{
+    list-style: none;
+    display: inline;
+    padding-left: 30px;
+}
+
+#header nav ul li a{
+    font-size: 15px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+#header nav ul li a:hover{
+    color: rgb(202, 103, 143);
+}
+
+#header main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+
+#header main img{
+    height: 60vh;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(204, 113, 118)
+}
+
+#header main img:hover{
+    transform: scale(1.2);
+}
+
+#header .info h3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-bottom: 15px;
+}
+
+#header .info p{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+}
+
+#header .info p span{
+    color: rgb(202, 103, 143);
+}
+/* --------------------------header------------------------------ */
+
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(214, 176, 191);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about .photo{
+    height: 70vh;
+    width: 350px;
+    background-color: white;
+    background: url(./images/about.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0 0 20px black;
+}
+
+#about .content .content-info h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#about .content .content-info p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+/* ---------------------about----------------------------- */
+
+#qualification{
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+
+}
+
+#qualification h1{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    padding: 50px 39%;
+}
+
+#qualification .content{
+    display: inline-flex;
+}
+
+#qualification .content .box{
+    height: 70px;
+    width: 325px;
+    display: flex;
+    margin-top: 60px;
+    margin-left: 100px;
+
+}
+
+#qualification .content .box .logo{
+    height: 45px;
+    width: 45px;
+    border: 2px solid rgb(202, 103, 143);
+    border-radius: 30px;
+    padding: 12px 10px;
+}
+
+#qualification .content .box .logo:hover{
+    background-color: rgb(156, 154, 154);
+}
+
+.fa-solid{
+    color: rgb(202, 103, 143);
+}
+
+
+#qualification .content .box .work-info{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/* ----------------------qualification---------------------- */
+
+#portfolio {
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(214, 176, 191);
+    text-align: center;
+}
+
+#portfolio h2 {
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+}
+
+#portfolio .project{
+    height: 78%;
+    width: 100%;
+
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#portfolio .project .projects img{
+    height: 300px;
+    width: 400px;
+    background-color: aqua;    
+}
+
+#portfolio .project .projects p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+
+
+/* #portfolio .portfolio-thumb {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay {
+    background: rgb(222, 236, 21);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.9);
+}  */
+
+/* ---------------------portfolio------------------------------- */
+
+#contact{
+    height: 83vh;
+    width: 100%;
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact .contact-info{
+    height: 100%;
+    width: 40%;
+    padding: 50px 100px;
+}
+
+#contact .contact-info h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 50px;
+}
+
+#contact .contact-info p i{
+    height: 45px;
+    width: 45px;
+    border: 2px solid rgb(202, 103, 143);
+    border-radius: 30px;
+    padding: 12px 12px;
+    margin-right: 10px;
+}
+
+.contact .contact-info span{
+    display: inline-flex;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#contact .contact-info p{
+    padding: 10px 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#contact .contact-info p i:hover{
+    background-color: rgb(156, 154, 154);
+}
+
+#contact .contact-info p a{
+    text-decoration: none;
+    color: rgb(202, 103, 143);
+
+}
+
+#contact .contact-info p a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+#contact .contact-form{
+    height: 100%;
+    width: 55%;
+}
+
+#contact .contact-form form{
+    padding: 120px 0 0 20px;
+}
+
+form input, form textarea{
+    
+    width: 70%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: medium;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background: rgb(207, 201, 201);
+}
+
+#contact .contact-form form textarea{
+    width: 70%;
+}
+
+#contact .contact-form .btn{
+    height: 50px;
+    width: 150px;   
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300; 
+    font-size: 18px;
+    outline: none;
+    background-color: rgb(202, 103, 143);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+
+#contact .contact-form .btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#contact .contact-form #msg{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(202, 103, 143);
+}
+
+
+/* ------------------------form------------------------------- */
+
+footer {
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #090909;
+    color: whitesmoke;
+}
+
+footer .container p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer hr {
+    border: 0;
+    background: rgb(202, 103, 143);
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+/* end footer */
+
+/* start social icon */
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border-radius: 50%;
+    color: #606060;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.social-icon li a:hover {
+    color: rgb(202, 103, 143);
+}
+
+.social-icon :hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out, border-width 0.3s ease-in-out;
+}
+
+/* ------------------------------footer---------------------- */
+
+.mobile-nav{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #header {
+        height: 60vh;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding-bottom: 10px;
+    }
+    #header nav ul{
+        display: none;
+    
+    }
+    #header nav .firstname{
+        font-size: 20px;
+        text-align: center;
+    }
+    #header nav{
+        justify-content: space-around;
+       
+
+    }
+    .mobile-nav{
+        height: 27vh;
+        width: 100vw;
+        background-color: rgb(202, 103, 143);
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        gap: 40px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .mobile-nav li a{
+        text-decoration: none;
+        color: #090909;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    #header main img {
+        height: 23vh;
+        width: 35%;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgb(204, 113, 118);
+    }
+    #header .info h3 {
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        padding-bottom: 10px;
+        margin-top: 31px;
+    }
+    #header .info p {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 50;
+    }
+
+      /* ----------------headermedia------------------------- */
+      #about {
+        height: 80vh;
+        width: 100%;
+        background-color: rgb(214, 176, 191);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+      #about .photo {
+        height: 27vh;
+        width: 211px;
+        
+    }
+    #about .content .content-info h2 {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+    #about .content .content-info p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 100;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    /* ---------------------aboutmedia------------------ */
+
+    #qualification {
+        height: 75vh;
+        width: 100%;
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    #qualification .content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    #qualification h1 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        padding: 30px 24%;
+    }
+
+    #qualification .content .box {
+        height: 70px;
+        width: 325px;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    /* --------------------------qualifacationmedia------------------- */
+
+
+    #portfolio{
+        height: 80vh;
+        width: 100vw;
+
+    }
+
+    #portfolio h2 {
+        padding-top: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bolder;
+    }
+
+    #portfolio .project{
+        height: 60%;
+        flex-direction: column;
+        
+
+    }
+
+    #portfolio .project .projects img {
+        height: 198px;
+        width: 250px;
+        /* background-color: aqua; */
+        
+    }
+
+    #portfolio .project .projects p{
+        font-size: 15px;
+        padding-bottom: 70px;
+    }
+    /* ---------------contactmedia------------------- */
+
+    #contact{
+        flex-direction: column;
+        height: 140vh;
+        width: 100%;
+    }
+
+    #contact .contact-info{
+        height: 100%;
+        width: 100%;
+        padding: 0px 90px;
+    }
+
+    #contact .contact-info h1{
+        font-size: 20px;
+        padding: 40px 0px;
+    }
+
+    #contact .contact-info p{
+        padding: 8px 0px 5px;
+        margin-right: -58px;
+    }
+
+
+
+}
